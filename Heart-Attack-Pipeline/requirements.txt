@@ -1,0 +1,14 @@
+numpy
+scipy
+torch>=1.12.0
+torchaudio>=0.12.0
+wfdb
+biosppy
+peakutils
+pyhrv
+pandas
+matplotlib
+tqdm
+tsfresh
+scikit-learn
+scipy

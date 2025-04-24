@@ -1,0 +1,201 @@
+/* src/pages/FancyDashboardPage.css */
+
+/* Overall Layout */
+.fancy-dashboard {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #4279a5, #ffffff);
+    overflow-x: hidden;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Sidebar */
+  .fancy-sidebar {
+    width: 240px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(200, 200, 200, 0.2);
+  }
+  .sidebar-user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .sidebar-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+  .sidebar-username {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+  }
+  .sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar-nav li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    font-weight: 500;
+    color: #444;
+    transition: color 0.2s;
+  }
+  .sidebar-nav li:hover {
+    color: #007bff;
+  }
+  .sidebar-nav .active {
+    color: #007bff;
+    font-weight: 600;
+  }
+  
+  /* Main Content */
+  .fancy-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+  }
+  .fancy-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .header-left h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  .subtitle {
+    margin: 0.25rem 0 0;
+    color: #666;
+  }
+  
+  /* Layout Container: 2:1 vertical split */
+  .layout-container {
+    flex: 1;
+    display: grid;
+    grid-template-rows: 2fr 1fr; /* Top = 2fr, Bottom = 1fr */
+    gap: 1rem;
+  }
+  
+  /* Top Section: 2 columns */
+  .top-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Left = 2fr, Right = 1fr */
+    gap: 1rem;
+  }
+  
+  /* Top-left (ECG) */
+  .top-left {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers horizontally */
+    justify-content: center; /* centers vertically */
+    text-align: center;
+  }
+  .top-left h2 {
+    margin-bottom: 1rem;
+  }
+  .ecg-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ecg-image {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Alert box under ECG */
+  .alert-box {
+    background-color: #ffdddd;
+    border: 1px solid #ff9999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    text-align: center;
+    color: #cc0000;
+    width: 100%;
+  }
+  
+  /* Top-right (Vitals) */
+  .top-right {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+  }
+  .top-right h2 {
+    margin: 0 0 1rem;
+    text-align: center;
+  }
+  /* Equally divide the vitals card */
+  .vitals-container {
+    flex: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Two equal rows */
+    gap: 1rem;
+  }
+  .vital-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 1rem;
+  }
+  .vital-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+  }
+  .vital-label {
+    font-weight: 600;
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  .vital-value {
+    margin: 0.25rem 0 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Bottom Section: Instructions */
+  .bottom-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  .bottom-section h2 {
+    margin-top: 0;
+  }
+  .bottom-section ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+  .bottom-section li {
+    margin-bottom: 0.5rem;
+  }
+  

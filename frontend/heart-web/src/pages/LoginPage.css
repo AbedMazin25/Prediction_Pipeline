@@ -1,0 +1,113 @@
+/* src/pages/LoginPage.css */
+
+/* 1. Full-screen gradient background, center content */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4279a5, #2575fc 100%);
+    font-family: sans-serif;
+    padding: 1rem;
+  }
+  
+  /* 2. White box (card) in the center, made larger */
+  .login-box {
+    background-color: #fff;
+    width: 500px; /* increased from 350px */
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Titles */
+  .login-box h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Form elements */
+  .login-box label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Buttons */
+  .login-box button {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .login-box button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Extra style for back button (optional) */
+  .back-button {
+    background-color: #6c757d;
+  }
+  
+  .back-button:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Links */
+  .links {
+    margin-top: 0.5rem;
+  }
+  
+  .links a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  
+  .links p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Error and success messages */
+  .error-message {
+    color: red;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .success-message {
+    color: green;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+  
